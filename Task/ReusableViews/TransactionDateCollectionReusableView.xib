@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="TransactionDateCollectionReusableView" customModule="Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="471" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ap2-mn-Fnh">
+                    <rect key="frame" x="14" y="0.0" width="443" height="67"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="ap2-mn-Fnh" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="bxP-y2-Y5f"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="ap2-mn-Fnh" secondAttribute="trailing" constant="14" id="dEy-Ru-0jM"/>
+                <constraint firstItem="ap2-mn-Fnh" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="hpc-7i-EOk"/>
+                <constraint firstItem="ap2-mn-Fnh" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="14" id="wYE-Of-N08"/>
+            </constraints>
+            <connections>
+                <outlet property="dateLabel" destination="ap2-mn-Fnh" id="iV2-yN-j8g"/>
+            </connections>
+            <point key="canvasLocation" x="247.10144927536234" y="149.66517857142856"/>
+        </collectionReusableView>
+    </objects>
+</document>
